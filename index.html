@@ -3,159 +3,228 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SociAlly – Social Media Management</title>
+  <title>SociAlly - Social Media Made Easy</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    :root {
+      --primary: #007F5F; /* Emerald Green */
+      --accent: #F4B400; /* Mustard Yellow */
+      --white: #FFFFFF;
+      --black: #000000;
+      --font: 'Segoe UI', sans-serif;
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-      line-height: 1.6;
-      background-color: #fff;
+      margin: 0;
+      font-family: var(--font);
+      background: var(--white);
+      color: var(--black);
     }
 
-    .site-header {
-      background-color: #1A237E;
-      padding: 15px 30px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      color: white;
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .site-header h1 {
+    header h1 {
       font-size: 24px;
+      margin: 0;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, var(--primary), #ffffff);
+      color: var(--white);
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+    }
+
+    .cta-btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: var(--accent);
+      color: var(--black);
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
     }
 
     .section {
-      padding: 40px 30px;
-    }
-
-    .section h2 {
-      margin-bottom: 20px;
-      font-size: 28px;
-      color: #1A237E;
-    }
-
-    .section p {
-      margin-bottom: 15px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
-    }
-
-    .cta {
-      background-color: #007F5F;
-      color: white;
+      padding: 60px 20px;
       text-align: center;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .plan {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 300px;
+      background: #f9f9f9;
+    }
+
+    .plan h4 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .plan ul li {
+      margin: 10px 0;
+    }
+
+    .testimonial {
+      background-color: #f4f4f4;
       padding: 40px 20px;
     }
 
-    .cta h3 {
-      margin-bottom: 10px;
-      font-size: 24px;
+    .testimonial blockquote {
+      font-style: italic;
+      margin: 0 auto;
+      max-width: 600px;
     }
 
-    .cta p {
-      margin-bottom: 20px;
+    .footer {
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 20px;
     }
 
-    .cta a {
+    .footer a {
+      color: var(--accent);
       text-decoration: none;
-      background-color: #F4B400;
-      color: #fff;
-      padding: 12px 25px;
-      border-radius: 5px;
       font-weight: bold;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      background-color: #1A237E;
-      color: white;
+    @media (max-width: 768px) {
+      .plans {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <h1>SociAlly – Social Media Management</h1>
+  <header>
+    <h1>SociAlly</h1>
+    <a href="https://wa.me/2349087469723" style="color: #fff; text-decoration: underline;">Chat on WhatsApp</a>
   </header>
 
-  <section class="section">
-    <h2>What We Do</h2>
-    <p>We help brands, businesses, and busy professionals manage their social media presence — from content creation to engagement and strategy. You focus on growth while we build your online presence.</p>
+  <section class="hero">
+    <h2>Too Busy To Post?</h2>
+    <p>Let SociAlly handle your social media so you can focus on running your business. We create beautiful, consistent content that gets you noticed.</p>
+    <a href="https://wa.me/2349087469723"><button class="cta-btn">Start With a Free Audit</button></a>
   </section>
 
   <section class="section">
-    <h2>Client Packages</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Basic Visibility</h3>
+    <h3>What We Do</h3>
+    <p>SociAlly helps small businesses and entrepreneurs build their presence on social media through strategic content creation, consistent posting, and brand storytelling. Whether you're launching a new product or nurturing an online community, our job is to make sure your brand looks great and stays active.</p>
+  </section>
+
+  <section class="section">
+    <h3>Our Plans</h3>
+    <div class="plans">
+      <div class="plan">
+        <h4>Start-Up Plan</h4>
         <ul>
-          <li>12 posts/month</li>
-          <li>Captions and hashtags</li>
-          <li>Page Optimization</li>
+          <li>₦30,000/month</li>
+          <li>3 Weekly Posts</li>
+          <li>Captions + Designs</li>
+          <li>Basic Reporting</li>
         </ul>
       </div>
-      <div class="card">
-        <h3>Business Booster</h3>
+      <div class="plan">
+        <h4>Growth Plan</h4>
         <ul>
-          <li>20 posts/month</li>
-          <li>Page monitoring</li>
-          <li>Monthly insights report</li>
+          <li>₦50,000/month</li>
+          <li>5 Weekly Posts</li>
+          <li>Reels + Carousels</li>
+          <li>Content Scheduling</li>
         </ul>
       </div>
-      <div class="card">
-        <h3>Full Management</h3>
+      <div class="plan">
+        <h4>Authority Plan</h4>
         <ul>
-          <li>30 posts/month</li>
-          <li>Community engagement</li>
-          <li>Ad strategy support</li>
-          <li>Monthly reporting + strategy call</li>
+          <li>₦100,000/month</li>
+          <li>Full Social Management</li>
+          <li>Ads Management</li>
+          <li>DM Replies + Analytics</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>About Us</h2>
-    <p>SociAlly is built for small businesses and solopreneurs who don’t have time or expertise to build their brand online. We don’t just post — we create conversations, community, and conversion. Our goal is to keep you relevant, consistent, and profitable online.</p>
+  <section class="testimonial">
+    <blockquote>
+      "SociAlly transformed my Instagram page! I now look like a premium brand and my DMs haven’t stopped buzzing. Highly recommend!"
+      <br>– @glowwithnene
+    </blockquote>
+    <blockquote>
+      "As a baker, I never had time to post. Now SociAlly handles everything and I just get customers!"
+      <br>– @sweetbakes.ng
+    </blockquote>
   </section>
 
   <section class="section">
-    <h2>Frequently Asked Questions</h2>
-    <div class="card">
-      <h3>How do I sign up?</h3>
-      <p>Click the button below to begin your onboarding. You’ll fill a quick form so we can know your goals and content preferences.</p>
-      <h3>Can I upgrade my package?</h3>
-      <p>Yes! You can switch plans anytime. We scale as your needs grow.</p>
-      <h3>What platforms do you manage?</h3>
-      <p>We currently manage Instagram, Facebook, LinkedIn, and WhatsApp Business. Other platforms on request.</p>
-    </div>
+    <h3>Why Choose Us</h3>
+    <p>✅ Affordable pricing for real results</p>
+    <p>✅ Nigerian tone and design language that connects</p>
+    <p>✅ Dedicated social media support team</p>
+    <p>✅ Clear reports and continuous improvement</p>
+    <p>✅ We help you grow — not just post</p>
   </section>
 
-  <section class="cta">
-    <h3>Let’s grow your brand online</h3>
-    <p>Click below to get started or reach us directly on WhatsApp.</p>
-    <a href="https://wa.me/2349087469723">Start Now</a>
+  <section class="section">
+    <h3>Frequently Asked Questions</h3>
+    <p><strong>Do I need to provide content?</strong> No, we create your content from scratch based on your brand style and goals.</p>
+    <p><strong>How do I get started?</strong> Just click the WhatsApp link and fill our short onboarding form.</p>
+    <p><strong>Can I cancel anytime?</strong> Yes, plans are monthly — no contracts, no commitments.</p>
   </section>
 
-  <footer>
-    &copy; 2025 SociAlly. All Rights Reserved.
+  <section class="section">
+    <h3>See The Difference</h3>
+    <p>Our clients go from inconsistent and unnoticed to polished and professional.</p>
+    <a href="https://wa.me/2349087469723"><button class="cta-btn">Book A Free Strategy Call</button></a>
+  </section>
+
+  <footer class="footer">
+    <p>Contact us on WhatsApp: <a href="https://wa.me/2349087469723">+234 908 746 9723</a></p>
+    <p>&copy; 2025 SociAlly. All rights reserved.</p>
   </footer>
 </body>
 </html>
