@@ -1,110 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SociAlly - Smart Social Media Management for Small Businesses in Nigeria">
-  <title>SociAlly | Social Media Management Made Easy</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SociAlly – Social Media Management</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #fff;
+    }
+
+    .site-header {
+      background-color: #1A237E;
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+
+    .site-header h1 {
+      font-size: 24px;
+    }
+
+    .section {
+      padding: 40px 30px;
+    }
+
+    .section h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #1A237E;
+    }
+
+    .section p {
+      margin-bottom: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .cta {
+      background-color: #007F5F;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .cta h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .cta p {
+      margin-bottom: 20px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background-color: #F4B400;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #1A237E;
+      color: white;
+    }
+  </style>
+</head>
 <body>
   <header class="site-header">
-    <h1>SociAlly</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>SociAlly – Social Media Management</h1>
   </header>
 
-  <section class="hero">
-    <h2>Grow Your Brand, Engage Your Audience</h2>
-    <p>We help Nigerian small businesses like yours win online through smart, affordable, and results-driven social media management.</p>
-    <a href="https://wa.me/2349087469723" class="cta-button">Book a Free Strategy Call</a>
+  <section class="section">
+    <h2>What We Do</h2>
+    <p>We help brands, businesses, and busy professionals manage their social media presence — from content creation to engagement and strategy. You focus on growth while we build your online presence.</p>
   </section>
 
-  <section id="about" class="about">
-    <h2>About SociAlly</h2>
-    <p>SociAlly is your reliable social media partner. We understand what it means to wear many hats as a business owner—that’s why we take the stress of content creation, posting, and strategy off your hands.</p>
-    <p>From Lagos to the world, we manage accounts that convert followers to customers. Whether you sell Ankara fabrics, manage a skincare brand, run a food delivery business, or are just starting out—we tailor our strategies to fit your voice and audience.</p>
-    <p>We’re not just a service—we’re your team.</p>
-  </section>
-
-  <section id="packages" class="packages">
-    <h2>Our Packages</h2>
-    <div class="package">
-      <h3>Start-Up</h3>
-      <ul>
-        <li>12 custom posts/month</li>
-        <li>2 reels/month</li>
-        <li>Hashtag research</li>
-        <li>Page audit + bio optimization</li>
-        <li>Platform: Instagram or Facebook</li>
-      </ul>
-    </div>
-    <div class="package">
-      <h3>Growth</h3>
-      <ul>
-        <li>16 custom posts/month</li>
-        <li>4 reels/month</li>
-        <li>Engagement support</li>
-        <li>Caption copywriting</li>
-        <li>Platform: Instagram + Facebook</li>
-      </ul>
-    </div>
-    <div class="package">
-      <h3>Authority</h3>
-      <ul>
-        <li>20+ custom posts/month</li>
-        <li>8 reels/month</li>
-        <li>Cross-platform strategy (IG, FB, TikTok)</li>
-        <li>Custom graphics, carousel & story templates</li>
-        <li>Weekly report + strategy check-in</li>
-      </ul>
+  <section class="section">
+    <h2>Client Packages</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Basic Visibility</h3>
+        <ul>
+          <li>12 posts/month</li>
+          <li>Captions and hashtags</li>
+          <li>Page Optimization</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Business Booster</h3>
+        <ul>
+          <li>20 posts/month</li>
+          <li>Page monitoring</li>
+          <li>Monthly insights report</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Full Management</h3>
+        <ul>
+          <li>30 posts/month</li>
+          <li>Community engagement</li>
+          <li>Ad strategy support</li>
+          <li>Monthly reporting + strategy call</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section id="testimonials" class="testimonials">
-    <h2>What Clients Are Saying</h2>
-    <blockquote>
-      “SociAlly helped me move from 0 to 1,000 followers and I started getting consistent orders from Instagram within 3 months. They really understand small businesses!” – Amina, Skin Glow Boss
-    </blockquote>
-    <blockquote>
-      “I didn’t know what to post. Now people save and share my content all the time. SociAlly gets it.” – Emeka, Afro-Fusion Foods
-    </blockquote>
-    <blockquote>
-      “SociAlly gave me my time back. I can now focus on running my shop while they handle the social media. They’re my secret weapon.” – Adesuwa, AnkaraWears
-    </blockquote>
+  <section class="section">
+    <h2>About Us</h2>
+    <p>SociAlly is built for small businesses and solopreneurs who don’t have time or expertise to build their brand online. We don’t just post — we create conversations, community, and conversion. Our goal is to keep you relevant, consistent, and profitable online.</p>
   </section>
 
-  <section id="spotlight" class="spotlight">
-    <h2>Client Spotlight</h2>
-    <p>We showcase our clients regularly! Want to be featured in our monthly spotlight? You get custom branded content and increased exposure across our platforms.</p>
-    <a href="https://bit.ly/SociAllyOnboardingForm" class="cta-button">Join SociAlly Today</a>
+  <section class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="card">
+      <h3>How do I sign up?</h3>
+      <p>Click the button below to begin your onboarding. You’ll fill a quick form so we can know your goals and content preferences.</p>
+      <h3>Can I upgrade my package?</h3>
+      <p>Yes! You can switch plans anytime. We scale as your needs grow.</p>
+      <h3>What platforms do you manage?</h3>
+      <p>We currently manage Instagram, Facebook, LinkedIn, and WhatsApp Business. Other platforms on request.</p>
+    </div>
   </section>
 
-  <section id="lead-magnet" class="lead-magnet">
-    <h2>Free Guide: 15 Content Ideas That Get Engagement</h2>
-    <p>Struggling to create content? Get our free downloadable PDF packed with plug-and-play ideas that any business in Nigeria can use.</p>
-    <a href="/downloads/Socially_Free_Content_Guide.pdf" class="cta-button">Download Free Guide</a>
+  <section class="cta">
+    <h3>Let’s grow your brand online</h3>
+    <p>Click below to get started or reach us directly on WhatsApp.</p>
+    <a href="https://wa.me/2349087469723">Start Now</a>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Let’s Talk</h2>
-    <p>Book a strategy session, ask a question, or simply say hello.</p>
-    <a href="https://wa.me/2349087469723" class="cta-button">Chat With Us on WhatsApp</a>
-    <p>Email: support@sociallynigeria.com</p>
-  </section>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 SociAlly. All rights reserved.</p>
-    <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">TikTok</a></p>
+  <footer>
+    &copy; 2025 SociAlly. All Rights Reserved.
   </footer>
 </body>
-
 </html>
