@@ -85,6 +85,35 @@
       margin-bottom: 20px;
       color: var(--primary);
     }
+.section-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.section-flex img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.section-flex .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+@media (max-width: 768px) {
+  .section-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
     .plans {
       display: flex;
