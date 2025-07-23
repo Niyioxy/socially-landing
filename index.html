@@ -62,36 +62,6 @@
       font-size: 18px;
       max-width: 600px;
     }
-@keyframes fadeSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hero h2,
-.hero p,
-.hero img {
-  animation: fadeSlideUp 1s ease-out forwards;
-  opacity: 0;
-}
-
-.hero h2 {
-  animation-delay: 0.2s;
-}
-
-.hero p {
-  animation-delay: 0.4s;
-}
-
-.hero img {
-  animation-delay: 0.6s;
-}
-
     .cta-btn {
       margin-top: 30px;
       padding: 15px 30px;
@@ -130,21 +100,6 @@
       margin-bottom: 20px;
       color: var(--primary);
     }
-    @keyframes growFade {
-  0% {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.section h3 {
-  animation: growFade 0.8s ease-out;
-}
-
 .section-flex {
   display: flex;
   align-items: center;
@@ -174,42 +129,6 @@
     text-align: center;
   }
 }
-
-    @keyframes slideInLeft {
-  0% {
-    transform: translateX(-30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.plan:nth-child(odd),
-.client-type:nth-child(odd) {
-  animation: slideInLeft 1s ease forwards;
-  opacity: 0;
-}
-
-.plan:nth-child(even),
-.client-type:nth-child(even) {
-  animation: slideInRight 1s ease forwards;
-  opacity: 0;
-}
-
-
 
 .client-type {
   background: #f9f9f9;
@@ -293,7 +212,6 @@
         align-items: center;
       }
     }
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </style>
 </head>
@@ -326,7 +244,6 @@
 </section>
 
 <section class="section">
-<div data-aos="fade-up">
   <h3>Who We Serve</h3>
   <div class="section-flex">
     <div class="text">
@@ -426,10 +343,8 @@
   <footer class="footer">
     <p>Contact us on WhatsApp: <a href="https://wa.me/2349087469723">+234 908 746 9723</a></p>
     <p>&copy; 2025 SociAlly. All rights reserved.</p>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
