@@ -198,39 +198,6 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 @keyframes slideInLeft {
-  0% {
-    transform: translateX(-30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.plan:nth-child(odd),
-.client-type:nth-child(odd) {
-  animation: slideInLeft 1s ease forwards;
-  opacity: 0;
-}
-
-.plan:nth-child(even),
-.client-type:nth-child(even) {
-  animation: slideInRight 1s ease forwards;
-  opacity: 0;
-}
-
 .client-type img {
   width: 100%;
   max-width: 250px;
